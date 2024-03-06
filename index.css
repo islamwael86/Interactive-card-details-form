@@ -1,0 +1,327 @@
+:root {
+  --border: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 1440px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 720px;
+  height: 525px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 720px;
+  height: 525px;
+}
+
+.front {
+  width: 445px;
+  height: 245px;
+  position: relative;
+  left: 160px;
+}
+
+.logo {
+  position: absolute;
+  left: 187px;
+  top: 215px;
+}
+
+.card-buttom {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  position: absolute;
+  left: 187px;
+  top: 373px;
+}
+
+.name {
+  width: 334.109px;
+}
+
+.two-number {
+  letter-spacing: 1.5px;
+}
+
+.serial {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 500;
+  word-spacing: 4px;
+  letter-spacing: 4.5px;
+  position: absolute;
+  left: 187px;
+  top: 305px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.back {
+  width: 445px;
+  height: 245px;
+  position: relative;
+  left: 260px;
+  top: 30px;
+}
+
+.back-num {
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  left: 623px;
+  bottom: 0px;
+}
+
+form {
+  margin-left: -100px;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  margin-bottom: 25px;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.last-line {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+  margin-top: -3px;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -5px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cvc label {
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+
+.exp-data div {
+  margin-top: 7px;
+}
+
+input::-moz-placeholder {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.486);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input::placeholder {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.486);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.card-holder input:focus,
+.card-number input:focus,
+.exp-data div input:focus,
+.cvc input:focus {
+  border-color: var(--border);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.card-holder input,
+.card-number input,
+.exp-data div input,
+.cvc input {
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.holder,
+.number {
+  width: 375px;
+  height: 43px;
+  outline: none;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirm {
+  width: 380.13px;
+  height: 53px;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-radius: 5px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: -2px;
+}
+
+.month,
+.year {
+  width: 73.75px;
+  height: 43px;
+  outline: none;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.month {
+  margin-right: 10px;
+}
+
+.year {
+  margin-right: 10px;
+}
+
+.cvc3 {
+  width: 177.5px;
+  height: 43px;
+  outline: none;
+  padding: 0;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background-image: url("./images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 375px 240px;
+  }
+  main {
+    width: 375px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 360px;
+    height: 600px;
+  }
+  .left {
+    width: 360px;
+    height: 300px;
+  }
+  .front {
+    width: 285px;
+    height: 157px;
+    position: relative;
+    left: 3px;
+    top: 124px;
+    z-index: 9999;
+  }
+  .logo {
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    z-index: 9999;
+  }
+  .serial {
+    font-size: 15px;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    position: absolute;
+    left: 25px;
+    top: 205px;
+    z-index: 9999;
+  }
+  .card-buttom {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    top: 240px;
+    z-index: 9999;
+  }
+  .name {
+    width: 250px;
+  }
+  .back {
+    width: 285px;
+    height: 157px;
+    position: relative;
+    left: 60px;
+    top: -131px;
+  }
+  .back-num {
+    font-size: 9px;
+    position: absolute;
+    top: 93px;
+    left: 295px;
+  }
+  form {
+    margin-left: 0;
+  }
+  .holder,
+  .number {
+    width: 300px;
+  }
+  .confirm {
+    width: 300px;
+  }
+  .month,
+  .year {
+    width: 65px;
+  }
+  .cvc3 {
+    width: 130px;
+  }
+  .last-line {
+    position: relative;
+    top: -5px;
+    margin-bottom: 45px;
+  }
+  .confirm {
+    position: relative;
+    top: -20px;
+    width: 305px;
+  }
+}/*# sourceMappingURL=index.css.map */

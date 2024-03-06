@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <div class="card-front">
+        <img class="front" src="./images/bg-card-front.png" alt="">
+        <img class="logo" src="./images/card-logo.svg" alt="">
+        <p class="serial">0000 0000 0000 0000</p>
+        <div class="card-buttom"><p class="name">Jane Appleseed</p> <p class="two-number"><p class="m">00</p> <p>/</p> <p class="y">00</p></p></div>
+      </div>
+      <div class="card-back">
+        <img class="back" src="./images/bg-card-back.png" alt="">
+        <p class="back-num">000</p>
+      </div>
+    </section>
+    <section class="right">
+      <form action="">
+        <div class="card-holder">
+          <label>Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" class="holder">
+        </div>
+        <div class="card-number">
+          <label>Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="number">
+        </div>
+        <div class="last-line">
+          <div class="exp-data">
+            <label>Exp. Date (MM/YY)</label>
+            <div class="ex">
+              <input type="text" placeholder="MM" class="month">
+              <input type="text" placeholder="YY" class="year">
+            </div>
+          </div>
+          <div class="cvc">
+            <label>CVC</label>
+              <input type="text" placeholder="e.g. 123" class="cvc3">
+          </div>
+        </div>
+        <div class="add"></div>
+        <input type="submit" value="Confirm" class="confirm">
+      </form>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/c8fc3279c4.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
