@@ -326,10 +326,7 @@ input::placeholder {
   }
   .holder,
   .number {
-    width: 300px;
-  }
-  .confirm {
-    width: 300px;
+    width: 303.125px;
   }
   .month,
   .year {
@@ -344,6 +341,7 @@ input::placeholder {
     margin-bottom: 45px;
   }
   .confirm {
+    width: 300px;
     position: relative;
     top: -20px;
     width: 305px;
