@@ -63,6 +63,15 @@ main {
 
 .name {
     width: 334.109px;
+    height: 21px;
+    font-size: 16px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .two-number {
@@ -77,8 +86,10 @@ main {
     letter-spacing: 4.5px;
     position: absolute;
     left: 187px;
-    top: 275px;
+    top: 335px;
     font-family: 'Space Grotesk', sans-serif;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 .back {
@@ -277,7 +288,7 @@ input::placeholder {
         letter-spacing: 4px;
         position: absolute;
         left: 25px;
-        top: 185px;
+        top: 215px;
         z-index: 9999;
     }
 
@@ -293,6 +304,10 @@ input::placeholder {
 
     .name {
         width: 250px;
+        height: 31px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        font-size: 11px;
     }
 
     .back {
